@@ -1,4 +1,4 @@
-const base_URL = 'http://localhost:5000/rooms';
+const base_URL = 'https://temporary-chatrooms-backend.onrender.com/rooms';
 import { getToken } from '../utils/securities';
 import { getEmailFromToken } from '../utils/decodes';
 
