@@ -1,4 +1,4 @@
-const base_URL = 'http://localhost:5000/users';
+const base_URL = 'https://temporary-chatrooms-backend.onrender.com/users';
 
 export async function createUser(username, avatar) {
   const createURL = `${base_URL}/create`;
