@@ -1,4 +1,4 @@
-const base_URL = 'http://localhost:5000/userRooms';
+const base_URL = 'https://temporary-chatrooms-backend.onrender.com/userRooms';
 
 export async function getUserPresence(roomID, retryCount = 0) {
   const response = await fetch(`${base_URL}/${roomID}/users`);
