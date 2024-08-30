@@ -1,4 +1,4 @@
-const base_URL = 'http://localhost:5000/messages';
+const base_URL = 'https://temporary-chatrooms-backend.onrender.com';
 
 export async function saveMessage(roomID, userID, avatar, content) {
   const saveURL = `${base_URL}/save`;
