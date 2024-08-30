@@ -1,4 +1,4 @@
-const base_URL = 'https://temporary-chatrooms-backend.onrender.com';
+const base_URL = 'https://temporary-chatrooms-backend.onrender.com/messages';
 
 export async function saveMessage(roomID, userID, avatar, content) {
   const saveURL = `${base_URL}/save`;
