@@ -1,4 +1,4 @@
-const base_URL = "http://localhost:5000/accounts";
+const base_URL = "https://temporary-chatrooms-backend.onrender.com/accounts";
 
 export async function signUp(accountData) {
   const createURL = `${base_URL}/create`;
