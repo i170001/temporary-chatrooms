@@ -1,0 +1,91 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(29, 46, 47);
+}
+
+.logo {
+  width: 100%;
+  max-width: 390px;
+  height: auto;
+}
+
+.create-room-button,
+.login-button,
+.signup-button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-room-button:hover,
+.login-button:hover,
+.signup-button:hover {
+  background-color: #0056b3;
+}
+
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-buttons button {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    max-width: 200px;
+  }
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 4px;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    width: 80%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal-content {
+    width: 80%;
+    padding: 10px;
+  }
+}
