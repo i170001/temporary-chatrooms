@@ -1,7 +1,8 @@
 import { AvatarGenerator } from 'random-avatar-generator';
+import { v4 as uuidv4 } from 'uuid';
 
 export function generateAnimalName(){
-  const username = "abc";
+  const username = uuidv4();
   return username;
 }
 
