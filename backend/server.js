@@ -14,15 +14,15 @@ const userRoomsRouter = require('./routes/userRooms');
 const accountsRouter = require('./routes/accounts');
 const securityMiddleware = require('./middlewares/securities');
 
+app.use(cors({
+  origin: 'https://temporary-chatrooms.onrender.com/',
+  credentials: true,
+}));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(cors({
-  origin: 'https://temporary-chatrooms.onrender.com/',
-  credentials: true,
-}));
 app.use(securityMiddleware.checkJWT);
 
 require('dotenv').config();
