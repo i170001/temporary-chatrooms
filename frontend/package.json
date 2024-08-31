@@ -23,7 +23,6 @@
     "jwt-decode": "^4.0.0",
     "lucide-react": "^0.429.0",
     "qrcode": "^1.5.4",
-    "random-animal-name": "^0.1.1",
     "random-avatar-generator": "^2.0.0",
     "react-icons": "^5.2.1",
     "react-modal": "^3.16.1",
