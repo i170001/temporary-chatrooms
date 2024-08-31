@@ -15,8 +15,7 @@ const accountsRouter = require('./routes/accounts');
 const securityMiddleware = require('./middlewares/securities');
 
 app.use(cors({
-  origin: 'https://temporary-chatrooms.onrender.com/',
-  credentials: true,
+  origin: 'https://temporary-chatrooms.onrender.com'
 }));
 app.use(logger('dev'));
 app.use(express.json());
