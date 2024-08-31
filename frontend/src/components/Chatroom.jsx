@@ -123,7 +123,7 @@ function Chatroom() {
   useEffect(() => {
     if (!username) return;
 
-    socketRef.current = io('http://localhost:5000'); // connect to the server
+    socketRef.current = io('https://temporary-chatrooms-backend.onrender.com'); // connect to the server
     socketRef.current.emit('join room', id, username, avatar); // join the room when the component mounts
 
     socketRef.current.on('error joining', (error) => {
